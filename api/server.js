@@ -1,5 +1,6 @@
 // See https://github.com/typicode/json-server#module
 const jsonServer = require('json-server')
+const auth = require("json-server-auth");
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
